@@ -10,9 +10,16 @@ public class Test03 {
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[i] == 3) {
 				count++;
-				continue;
 			}
 		}
+
+		// 향상된 for문으로도 가능
+//		for (int i : arr) {
+//			if (i == 3) {
+//				count++;
+//			}
+//		}
+
 		System.out.println(count);
 	}
 }

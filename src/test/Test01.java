@@ -6,13 +6,13 @@ public class Test01 {
 		int[] arr = { 90, 80, 70, 100, 85 };
 
 		int sum = 0;
-		int average = 0;
 
 		for (int i : arr) {
 			sum += i;
-			average = sum / arr.length;
 		}
 
+		// 평균값(나눗셈 사용) 구할 때는 변수 타입을 double로 하는 게 좋다
+		double average = sum / arr.length;
 		System.out.println(average);
 	}
 
